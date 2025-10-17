@@ -1,0 +1,51 @@
+.weather-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cloud {
+  background: #fff;
+  background: radial-gradient(circle, #fff 60%, #d9d9d9 100%);
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0.7;
+  animation: floatClouds 60s linear infinite;
+}
+
+.cloud1 {
+  width: 200px;
+  height: 200px;
+  top: 20%;
+  left: -250px;
+  animation-duration: 80s;
+}
+
+.cloud2 {
+  width: 150px;
+  height: 150px;
+  top: 50%;
+  left: -200px;
+  animation-duration: 60s;
+}
+
+.cloud3 {
+  width: 250px;
+  height: 250px;
+  top: 70%;
+  left: -300px;
+  animation-duration: 100s;
+}
+
+@keyframes floatClouds {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(120vw);
+  }
+}
